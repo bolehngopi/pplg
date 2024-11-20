@@ -1,4 +1,6 @@
+"use client";
 import Image from "next/image";
+import { useState } from "react";
 
 // Define a type for the product data structure
 interface Produk {
@@ -13,41 +15,43 @@ const Produk = () => {
   const produkList: Produk[] = [
     {
       id: 1,
-      title: "Gelang Manik-Manik",
-      description: "Gelang cantik dari manik-manik berwarna-warni.",
-      image: "/1.jpg",  // Pastikan menggunakan path yang benar
+      title: "Kerajinan dari kertas",
+      description: "Kerajinan tangan denagn bahan dasr kertas yang menarik.",
+      image: "/0.jpg",
     },
     {
       id: 2,
       title: "Tasbih",
       description: "Tasbih yang menarik dengan warna yang menarik.",
-      image: "/2.jpg",
+      image: "/6.jpg",
     },
     {
       id: 3,
       title: "Gantungan Handphone",
       description: "Gantungan Handphone yang bagus dan menarik untuk di taro di Handphone.",
-      image: "/3.jpg",
+      image: "/7.jpg",
     },
     {
       id: 4,
       title: "Gelang ",
       description: "Gelang yang menarik dengan warna dasar berwarna pink yang menarik untuk perempuan.",
-      image: "/4.jpg",
+      image: "/8.jpg",
     },
     {
       id: 5,
-      title: "Gantungan ",
-      description: "Gantungan yang menarik yang bisa di jadikan sebagai lat gantung seperti kunci dan lain lain nya .",
-      image: "/5.jpg",
+      title: "Batik sendal ",
+      description: "Membuat sendal menjadi menarik dilihat dengan lapisan kain batik yang menawan .",
+      image: "/90.jpg",
     },
     {
       id: 6,
       title: "Cuplikan Pembuatan Produk",
       description: "Cuplikan video pembuatan kerajinan tangan.",
-      video: "/ppkw.mp4",  // Video khusus pembuatan
+      video: "/ppkw.mp4",
     },
   ];
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   return (
     <section
@@ -72,14 +76,17 @@ const Produk = () => {
             key={produk.id}
             className="bg-white bg-opacity-10 rounded-xl shadow-lg p-4 hover:scale-105 transform transition duration-300"
           >
-            <div className="relative w-full h-48 rounded-t-xl overflow-hidden">
+            <div
+              className="relative w-full h-48 rounded-t-xl overflow-hidden cursor-pointer group"
+              onClick={() => setSelectedImage(produk.image || null)}
+            >
               {produk.image && (
                 <Image
-                  src={produk.image}  // Hanya menampilkan gambar
+                  src={produk.image}
                   alt={produk.title}
                   layout="fill"
                   objectFit="cover"
-                  className="rounded-t-xl"
+                  className="rounded-t-xl transition-transform duration-300 group-hover:scale-110"
                 />
               )}
             </div>
@@ -113,6 +120,30 @@ const Produk = () => {
           </div>
         ))}
       </div>
+
+      {/* Modal untuk gambar full size */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative">
+            <Image
+              src={selectedImage}
+              alt="Full Size"
+              width={800}
+              height={600}
+              className="rounded-lg"
+            />
+            <button
+              className="absolute top-2 right-2 bg-white text-black rounded-full px-3 py-1 text-lg font-bold"
+              onClick={() => setSelectedImage(null)}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
