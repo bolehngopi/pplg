@@ -1,7 +1,8 @@
 import About from "./components/About";
-import Produk from "./components/Produk";
-import Nav from "./components/Nav";
+import Produk from "./components/Jurusan";
+import Nav from "./components/Home";
 import Footer from "./components/Footer";
+import "./globals.css";
 
 
 const Home = () => {
