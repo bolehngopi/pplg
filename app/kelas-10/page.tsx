@@ -29,15 +29,15 @@ const KenapaPilihPPLG = () => {
         <div className="bg-gradient-to-r from-blue-700 to-blue-900 p-8 rounded-xl shadow-lg">
           <h3 className="text-3xl font-bold mb-4">Alasan Memilih PPLG</h3>
           <ul className="list-disc pl-6 space-y-4 text-lg">
-            <li>Karna gaji nya umr (anomali).</li>
-            <li>Karna kepencet (anomali).</li>
-            <li>Karna ingin menggali teknologi (anomali).</li>
-            <li>Karna gabut (anomali).</li>
-            <li>Karna saya sangat antusias dengan teknologi (anomali).</li>
-            <li>Karna gua ganteng (Anomali).</li>
-            <li>Karna gua pengen (anomali).</li>
-            <li>Karna gua pengen jadi programer (anomali).</li>
-            <li>Karna mau dapet duit (anomali).</li>
+            <li>Karena rasa penasaran akan dunia software, dan ingin mempelajarinya secara mendalam 🤤🤤 (Lidya Pro Gemink pepeelgeh).</li>
+            <li>Karena gajinya gede trus kerja gampang  (Manusiaa kelas 10).</li>
+            <li>pengen jadi hengker(canda) mau jadi ui/ux designer tapi gapaham teknologi jadi nyoba eksplor disini (Syaban kelas 10).</li>
+            <li>Karena PPLG itu seru dan sangat enak untuk belajar nya (Fadhil).</li>
+            <li>bisa mengetahui tentang teknologi secara luas dan inovatif (Magfirawrrri).</li>
+            <li>alasannya karena dulu pernah nyoba yg akhirnya malah tertarik (nata).</li>
+            <li>Karena mau jadi web desain PPLG (Selly meliyanti X PPLG).</li>
+            <li>Mau belajar coding, dan abang saya menyarankan ke saya untuk masuk ke jurusan RPL/PPLG (Muhammad Raafi X PPLG).</li>
+            <li>Karena minat dari smp sudah mengarah ke IT (Huga Ghaisan Syahputra Kelas 10 PP).</li>
             <li>Karna saya ingin tahu cara membuat game (anomali).</li>
           </ul>
         </div>
