@@ -113,7 +113,7 @@ const About: React.FC = () => {
               Kenapa Memilih PPLG?
             </h3>
             <p className="text-lg opacity-90">
-              Temukan alasan utama kenapa PPLG menjadi pilihan terbaik untuk masa depanmu!
+              Temukan alasan utama kenapa PPLG menjadi pilihan terbaik untuk masa depanmu! klik here card
             </p>
             <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-900 rounded-xl opacity-0 group-hover:opacity-90 transition-opacity duration-500 flex justify-center items-center">
               <div className="space-x-4">

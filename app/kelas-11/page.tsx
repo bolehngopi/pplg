@@ -1,132 +1,67 @@
-"use client";
+import React from "react";
 
-import Image from "next/image";
-import { useState } from "react";
-
-interface Person {
-  id: number;
-  name: string;
-  role: string;
-  bio: string;
-  instagram: string;
-  image: string;
-}
-
-const dataStruktur: Person[] = [
-  {
-    id: 1,
-    name: "Ketua Kelas",
-    role: "Ketua",
-    bio: "Saya adalah Ketua Kelas PPLG dengan semangat untuk memimpin dan memberikan yang terbaik.",
-    instagram: "https://instagram.com/ketua",
-    image: "/images/ketua.jpg",
-  },
-  {
-    id: 2,
-    name: "Wakil Ketua",
-    role: "Wakil Ketua",
-    bio: "Sebagai Wakil Ketua, saya membantu ketua dalam berbagai tugas kelas.",
-    instagram: "https://instagram.com/wakil",
-    image: "/images/wakil.jpg",
-  },
-  {
-    id: 3,
-    name: "Sekretaris",
-    role: "Sekretaris",
-    bio: "Saya bertanggung jawab untuk mencatat segala kegiatan kelas.",
-    instagram: "https://instagram.com/sekretaris",
-    image: "/images/sekretaris.jpg",
-  },
-  {
-    id: 4,
-    name: "Bendahara",
-    role: "Bendahara",
-    bio: "Saya mengelola keuangan kelas dengan transparan.",
-    instagram: "https://instagram.com/bendahara",
-    image: "/images/bendahara.jpg",
-  },
-];
-
-const StrukturKelas = () => {
-  const [selectedPerson, setSelectedPerson] = useState<Person | null>(null);
-
-  const handlePersonClick = (person: Person) => {
-    setSelectedPerson(person);
-  };
-
-  const closeModal = () => {
-    setSelectedPerson(null);
-  };
-
+const KenapaPilihPPLG = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-r from-blue-600 to-blue-900 text-white flex flex-col items-center justify-center py-10">
-      <h1 className="text-4xl font-bold mb-8">Struktur Kelas PPLG</h1>
-
-      {/* Daftar Anggota */}
-      <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
-        {dataStruktur.map((person) => (
-          <div
-            key={person.id}
-            className="bg-white bg-opacity-10 p-4 rounded-lg shadow-lg text-center hover:bg-opacity-20 cursor-pointer"
-            onClick={() => handlePersonClick(person)}
+    <div className="min-h-screen bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-20">
+      <h2 className="text-center text-4xl font-extrabold text-blue-400 mb-12">
+        Kenapa Memilih Jurusan PPLG?
+      </h2>
+      
+      <div className="container mx-auto px-6 md:px-12 space-y-12">
+        {/* Card untuk Kenapa Memilih PPLG */}
+        <div className="relative group">
+          <img
+            src="/11.jpg" // Ganti dengan foto kelas
+            alt="Foto Kelas"
+            className="w-full h-80 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105"
+          />
+          <a
+            href="https://www.instagram.com/pplgclassf_/" // Ganti dengan link IG kelas
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
-            <Image
-              src={person.image}
-              alt={person.name}
-              width={100}
-              height={100}
-              className="w-24 h-24 mx-auto rounded-full mb-4"
-            />
-            <h3 className="text-lg font-bold">{person.name}</h3>
-            <p className="text-blue-300">{person.role}</p>
-          </div>
-        ))}
-      </div>
-
-      {/* Modal Biodata */}
-      {selectedPerson && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-          onClick={closeModal} // Tutup modal jika area luar modal diklik
-        >
-          <div
-            className="bg-white text-black rounded-lg p-6 w-11/12 max-w-lg relative"
-            onClick={(e) => e.stopPropagation()} // Mencegah modal tertutup jika diklik di dalamnya
-          >
-            {/* Tombol Close */}
-            <button
-              className="absolute top-4 right-4 text-gray-500 text-2xl font-bold hover:text-gray-700"
-              onClick={closeModal}
-            >
-              &times;
-            </button>
-
-            {/* Konten Modal */}
-            <div className="text-center">
-              <Image
-                src={selectedPerson.image}
-                alt={selectedPerson.name}
-                width={120}
-                height={120}
-                className="w-32 h-32 mx-auto rounded-full mb-4"
-              />
-              <h3 className="text-2xl font-bold">{selectedPerson.name}</h3>
-              <p className="text-gray-700">{selectedPerson.role}</p>
-              <p className="mt-4">{selectedPerson.bio}</p>
-              <a
-                href={selectedPerson.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-6 px-4 py-2 bg-blue-500 text-white rounded-lg shadow hover:bg-blue-600"
-              >
-                Kunjungi Instagram
-              </a>
-            </div>
-          </div>
+            <span className="text-white text-2xl font-semibold">IG Kelas</span>
+          </a>
         </div>
-      )}
+
+        {/* Card Alasan Kenapa Memilih PPLG */}
+        <div className="bg-gradient-to-r from-blue-700 to-blue-900 p-8 rounded-xl shadow-lg">
+          <h3 className="text-3xl font-bold mb-4">Alasan Memilih PPLG</h3>
+          <ul className="list-disc pl-6 space-y-4 text-lg">
+          <li>Karna gaji nya umr (anomali).</li>
+              <li>karna kepencet (raisyah devita).</li>
+              <li>karna ingin menggali teknologi(wayan).</li>
+              <li>karna gabut(sheila).</li>
+              <li>karna saya sangat antusias dengan teknologi(Dwi Wahyu).</li>
+              <li>karna gua ganteng(Adrian).</li>
+              <li>karna gua pengen(yudha).</li>
+              <li>karna gua pengen jadi programer(aziz).</li>
+              <li>karna mau dapet duit(juan).</li>
+              <li>karna saya ingin tahu cara membuat game(Garuda).</li>
+              <li>Karena keterpaksaan dan sekarang menjadi biasa(Rifaldi).</li>
+              <li>karena tertarik dengan coding terutama membuat web(Rexi Sharma Adrian).</li>
+              <li>aku suka coding bg(adit ganteng kece badai).</li>
+              <li>Karena ingin masuk sebagai programer(Farrel rizki haikal).</li>
+              <li>Karena peluang karier di berbagai bidang teknologi, seperti developer software, game, dan web, sangat besar. Selain itu, PPLG memberikan kesempatan untuk meningkatkan wawasan dan keterampilan, mulai dari mempelajari coding, desain, hingga pengembangan teknologi secara mendalam dan terstruktur.(Pipit Wulandari & 11).</li>
+
+          </ul>
+        </div>
+
+        {/* Card Cita-Cita Kelas 10 */}
+        <div className="bg-gradient-to-r from-green-700 to-green-900 p-8 rounded-xl shadow-lg">
+          <h3 className="text-3xl font-bold mb-4">Cita-Cita dari Kelas 11</h3>
+          <ul className="list-disc pl-6 space-y-4 text-lg">
+            <li>Menjadi programmer sukses.</li>
+            <li>Menjadi ahli di bidang teknologi informasi.</li>
+            <li>Ingin membuat game yang populer.</li>
+            <li>Ingin bekerja di perusahaan teknologi besar.</li>
+            <li>Menciptakan startup teknologi.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default StrukturKelas;
+export default KenapaPilihPPLG;

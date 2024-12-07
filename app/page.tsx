@@ -1,8 +1,9 @@
 import About from "./components/About";
-import Produk from "./components/Jurusan";
 import Nav from "./components/Home";
 import Footer from "./components/Footer";
 import "./globals.css";
+import Jurusan from "./components/Jurusan";
+import KelasProject from "./components/KelasProject";
 
 
 const Home = () => {
@@ -11,7 +12,8 @@ const Home = () => {
       <Nav />
       <main>
         <About />
-        <Produk />
+        <Jurusan/>
+        <KelasProject/>
         <Footer/>
         
         

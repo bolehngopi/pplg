@@ -97,11 +97,9 @@ const JurusanPPLG: React.FC = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-center text-white px-6 py-4">
-                  <h4 className="text-2xl font-bold mb-4">Pak Andi</h4>
+                  <h4 className="text-2xl font-bold mb-4">Bu Wiwit </h4>
                   <p className="text-lg">
-                    Ahli dalam pengembangan aplikasi berbasis web dan mentor
-                    pemrograman JavaScript.
-                  </p>
+                  pembina jurusan pplg , dan juga sebagia guru pengajar kls 10,11&12  </p>
                 </div>
               </div>
             </div>
@@ -115,7 +113,7 @@ const JurusanPPLG: React.FC = () => {
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="text-center text-white px-6 py-4">
-                  <h4 className="text-2xl font-bold mb-4">Bu Siti</h4>
+                  <h4 className="text-2xl font-bold mb-4">Bu Annisa</h4>
                   <p className="text-lg">
                     Spesialis pengembangan perangkat lunak dan teknologi
                     Python.

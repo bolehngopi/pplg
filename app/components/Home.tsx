@@ -69,7 +69,7 @@ const Home: React.FC = () => {
         {/* Tombol CTA dengan Hover Effect */}
         <div className="mt-8">
           <button className="px-6 py-3 bg-blue-600 hover:bg-blue-500 active:bg-blue-700 rounded-lg text-lg font-semibold shadow-lg transition-transform transform hover:scale-105 active:scale-95">
-            Mulai Eksplorasi
+            
           </button>
         </div>
       </div>
