@@ -57,7 +57,7 @@ const KelasProject: React.FC = () => {
           {/* Larger Collage Image */}
           <div className="grid grid-cols-1 gap-6 p-6">
             <img
-              src="/A_stunning_and_vibrant_collage_of_various_creative.png" // Path to the new image
+              src="/kolase.jpg" // Path to the new image
               alt="Kolase project"
               className="h-[500px] w-full object-cover rounded-lg transform group-hover:scale-110 transition-transform duration-700 group-hover:blur-sm hover:brightness-75 shadow-2xl"
             />
