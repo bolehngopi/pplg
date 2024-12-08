@@ -28,14 +28,14 @@ const About: React.FC = () => {
   return (
     <div
       id="about-section"
-      className="relative min-h-screen bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 text-white py-20 overflow-hidden"
+      className="relative min-h-screen bg-gradient-to-r from-gray-800 via-gray-700 to-blue-800 text-white py-20 overflow-hidden"
     >
       {/* Parallax Background */}
       <div
         className="absolute inset-0 bg-fixed bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/background-pplg.jpg")',
-          filter: "brightness(0.5)",
+          backgroundImage: 'url("/images/pro-background.jpg")',
+          filter: "brightness(0.5) blur(2px)",
         }}
       />
 
@@ -46,32 +46,30 @@ const About: React.FC = () => {
       >
         <div className="container mx-auto px-6 md:px-12 space-y-16">
           {/* Judul Halaman */}
-          <h2 className="text-center text-5xl md:text-6xl font-extrabold mb-12 text-white tracking-wide">
-            Tentang <span className="text-blue-400">PPLG</span>
+          <h2 className="text-center text-5xl md:text-6xl font-extrabold mb-12 tracking-wide text-gray-100 drop-shadow-lg">
+            Tentang <span className="text-blue-300">PPLG</span>
           </h2>
 
-          {/* Apa itu PPLG */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="relative group bg-white text-black rounded-xl shadow-lg p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h3 className="text-3xl font-bold text-blue-700 mb-4">
+          {/* Section Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+            {/* Apa itu PPLG */}
+            <div className="relative group bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+              <h3 className="text-3xl font-bold text-blue-300 mb-6">
                 Apa itu PPLG?
               </h3>
-              <p className="text-lg opacity-90">
+              <p className="text-lg text-gray-300">
                 PPLG (Pengembangan Perangkat Lunak dan Gim) adalah program
                 pendidikan berbasis teknologi yang mempersiapkan siswa untuk
-                menjadi inovator masa depan dalam bidang perangkat lunak dan gim.
+                menjadi inovator masa depan dalam perangkat lunak dan gim.
               </p>
-              <div className="absolute top-0 right-0 -mt-8 -mr-8 bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition">
-                📘
-              </div>
             </div>
 
             {/* Apa yang Dipelajari */}
-            <div className="bg-white text-black rounded-xl shadow-lg p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-              <h3 className="text-3xl font-bold text-blue-700 mb-4">
+            <div className="relative group bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+              <h3 className="text-3xl font-bold text-blue-300 mb-6">
                 Apa yang Dipelajari di PPLG?
               </h3>
-              <ul className="list-disc pl-6 space-y-4 text-lg opacity-90">
+              <ul className="list-disc pl-6 space-y-4 text-lg text-gray-300">
                 <li>
                   Dasar pemrograman seperti Python, Java, dan C++.
                 </li>
@@ -90,78 +88,66 @@ const About: React.FC = () => {
           </div>
 
           {/* Visi & Misi */}
-          <div className="bg-blue-900 rounded-xl shadow-lg p-12 space-y-12">
-            <h3 className="text-4xl font-bold text-center text-white mb-8">
-              <span className="text-blue-400">Visi</span> & Misi Kami
+          <div className="relative bg-gradient-to-r from-blue-600 to-gray-900 rounded-2xl p-12 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
+            <h3 className="text-center text-4xl font-bold text-white mb-10">
+              <span className="text-blue-300">Visi</span> & Misi Kami
             </h3>
-            <div className="space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {/* Visi */}
-              <div className="flex space-x-4 items-start">
-                <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg">
-                  🌟
-                </div>
-                <div>
-                  <h4 className="text-3xl font-semibold text-blue-400 mb-2">
-                    Visi
-                  </h4>
-                  <p>
-                    Menjadi program pendidikan terbaik dalam pengembangan perangkat
-                    lunak dan gim yang melahirkan talenta unggul dan inovatif.
-                  </p>
-                </div>
+              <div>
+                <h4 className="text-3xl font-semibold text-blue-300 mb-4">
+                  Visi
+                </h4>
+                <p className="text-lg text-gray-300">
+                  Menjadi program pendidikan terbaik dalam pengembangan perangkat
+                  lunak dan gim yang melahirkan talenta unggul dan inovatif.
+                </p>
               </div>
 
               {/* Misi */}
-              <div className="flex space-x-4 items-start">
-                <div className="w-12 h-12 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg">
-                  🎯
-                </div>
-                <div>
-                  <h4 className="text-3xl font-semibold text-blue-400 mb-2">
-                    Misi
-                  </h4>
-                  <ul className="list-disc pl-6 space-y-4">
-                    <li>
-                      Meningkatkan keterampilan siswa dalam pemrograman dan desain.
-                    </li>
-                    <li>
-                      Menyediakan lingkungan belajar yang mendukung inovasi.
-                    </li>
-                    <li>
-                      Membantu siswa membangun karier profesional di bidang
-                      teknologi.
-                    </li>
-                  </ul>
-                </div>
+              <div>
+                <h4 className="text-3xl font-semibold text-blue-300 mb-4">
+                  Misi
+                </h4>
+                <ul className="list-disc pl-6 space-y-4 text-lg text-gray-300">
+                  <li>
+                    Meningkatkan keterampilan siswa dalam pemrograman dan desain.
+                  </li>
+                  <li>
+                    Menyediakan lingkungan belajar yang mendukung inovasi.
+                  </li>
+                  <li>
+                    Membantu siswa membangun karier profesional di bidang
+                    teknologi.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
 
           {/* Kenapa Memilih PPLG */}
-          <div className="relative group bg-white text-black rounded-xl shadow-lg p-8 transform transition duration-500 hover:scale-105 hover:shadow-2xl">
-            <h3 className="text-3xl font-bold text-blue-700 mb-4">
+          <div className="relative group bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+            <h3 className="text-3xl font-bold text-blue-300 mb-6">
               Kenapa Memilih PPLG?
             </h3>
-            <p className="text-lg opacity-90">
+            <p className="text-lg text-gray-300">
               PPLG menawarkan pendidikan yang berorientasi pada proyek, memungkinkan
               siswa untuk mempelajari teknologi terkini dan membangun masa depan
               yang cerah di bidang teknologi.
             </p>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-900 rounded-xl opacity-0 group-hover:opacity-90 transition-opacity duration-500 flex justify-center items-center">
-              <div className="space-x-4">
-                <button
-                  onClick={() => router.push("/kelas-11")}
-                  className="px-6 py-3 bg-white text-blue-900 font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
-                >
-                  Lihat Kelas 11
-                </button>
-                <button
-                  onClick={() => router.push("/kelas-10")}
-                  className="px-6 py-3 bg-white text-blue-900 font-semibold rounded-full shadow-md hover:bg-gray-100 transition"
-                >
-                  Lihat Kelas 10
-                </button>
-              </div>
+            <div className="mt-6 flex space-x-4 justify-center">
+              <button
+                onClick={() => router.push("/kelas-11")}
+                className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition"
+              >
+                Lihat Kelas 11
+              </button>
+              <button
+                onClick={() => router.push("/kelas-10")}
+                className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 transition"
+              >
+                Lihat Kelas 10
+              </button>
             </div>
           </div>
         </div>

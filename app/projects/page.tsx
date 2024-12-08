@@ -12,24 +12,66 @@ const Projects: React.FC = () => {
       link: "", // Link dapat ditambahkan nanti
     },
     {
+      name: "Sistem Kasir Desktop",
+      owner: "Dimas Syahreza",
+      description: "Aplikasi kasir sederhana berbasis desktop",
+      image: "/dmas.jpg", // Pastikan file gambar tersedia di direktori public
+      link: "", // Link dapat ditambahkan nanti
+    },
+    {
       name: "Portofolio",
       owner: "Habibi",
-      description: "Website Portofolio",
-      image: "/habibi.jpg", // Tambahkan gambar
+      description: "Portofolio",
+      image: "/bibi.jpg", // Tambahkan gambar
       link: "", // Link dapat ditambahkan nanti
     },
     {
-      name: "Portofolio",
-      owner: "Fathur",
-      description: "Website Portofolio",
-      image: "/fathur.jpg", // Tambahkan gambar
+      name: "Sistem Kasir Desktop",
+      owner: "Muhammad Fathurrahman Wahid",
+      description: "Aplikasi kasir sederhana berbasis desktop",
+      image: "/fathr.jpg", // Tambahkan gambar
       link: "", // Link dapat ditambahkan nanti
     },
     {
-      name: "cyber",
-      owner: "Magfi Adi Radza Putra ",
+      name: "Cyber",
+      owner: "Magfi Adi Radza Putra",
       description: "pico ctf",
       image: "/magfi.jpg", // Tambahkan gambar
+      link: "", // Link dapat ditambahkan nanti
+    },
+    {
+      name: "Game Unity",
+      owner: "Muhammad Fathurrahman Wahid",
+      description: "Game sederhana",
+      image: "/tur.jpg", // Tambahkan gambar
+      link: "", // Link dapat ditambahkan nanti
+    },
+    {
+      name: "Sistem Kasir Desktop",
+      owner: "Charissa Chartalia Chiaravita",
+      description: "Aplikasi kasir sederhana berbasis desktop",
+      image: "/charisa.jpg", // Tambahkan gambar
+      link: "", // Link dapat ditambahkan nanti
+    },
+    {
+      name: "Sistem Kasir Desktop",
+      owner: "Fadhil Danendra Hadie Brata",
+      description: "Aplikasi kasir sederhana berbasis desktop",
+      image: "/fadhli.jpg", // Tambahkan gambar
+      link: "", // Link dapat ditambahkan nanti
+    },
+    {
+      name: "Sistem Kasir Desktop",
+      owner: "Earlyta Dwi Anggraeni",
+      description: "Aplikasi kasir sederhana berbasis desktop",
+      image: "/dwi.jpg", // Tambahkan gambar
+      link: "", // Link dapat ditambahkan nanti
+    },
+    {
+      name: "Sistem Kasir Desktop",
+      owner: "Raisya Kamilah",
+      description: "Aplikasi kasir sederhana berbasis desktop",
+      image: "/kamil.jpg", // Tambahkan gambar
       link: "", // Link dapat ditambahkan nanti
     },
   ];
