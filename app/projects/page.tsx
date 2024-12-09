@@ -74,6 +74,7 @@ const Projects: React.FC = () => {
       image: "/kamil.jpg", // Tambahkan gambar
       link: "", // Link dapat ditambahkan nanti
     },
+    // ... Proyek lainnya untuk kelas 10
   ];
 
   const kelas11Projects = [
@@ -92,11 +93,11 @@ const Projects: React.FC = () => {
       link: "https://fan-png.vercel.app/", // Link ke Vercel
     },
     {
-      name: "Portofolio",
+      name: "Game",
       owner: "Antonius i wayan ",
       description: "Game Platformer",
-      image: "/jri.png",
-      link: "https://portofolio-pink-three.vercel.app/", // Link ke Vercel
+      image: "/an.png",
+      link: "https://ekorrisu.itch.io/flag-pairs-game/", // Link ke Vercel
     },
     {
       name: "Portofolio",
@@ -127,27 +128,50 @@ const Projects: React.FC = () => {
       link: "https://portofolio-psi-umber.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAablKjeuhK6cCeawC1zWN1FPLA05cgwcSB4VoMIefGqLC70K1RP6In3lqDA_aem_mlz0SDu2TU1Dv1vn9Egj8g", // Link ke Vercel
     },
     {
-      name: "Portofolio",
+      name: "game",
       owner: "Muhammad Al Mahdi",
       description: "Game platformer",
-      image: "/an.png",
-      link: "https://portofolio-eight-snowy.vercel.app/", // Link ke Vercel
+      image: "/madi.png",
+      link: "https://almahdi00.itch.io/adventure-knight-in-fairyland", // Link ke Vercel
     },
     {
       name: "Portofolio",
-      owner: "Rezezi Axcel",
+      owner: "Ahmad dhani",
       description: "Website Portofolio",
-      image: "/sel.png",
-      link: "hhttps://portofolioaxcel.vercel.app/",// Link ke Vercel
+      image: "/dan.png",
+      link: "https://www.canva.com/design/DAGYyoYJ3BE/-zxHrNQTjRfiXvvBiFcVaw/edit?utm_content=DAGYyoYJ3BE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",// Link ke Vercel
     },
     {
       name: "Game",
       owner: "Dwi Wahyu",
       description: "Game platformer",
-      image: "/dan.png",
-      link: "https://protofolio-web-w8f3.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAaaKmzDGYAQ9DCeczSiXG2-kVEaiGsdQxjLiZKGv4gmuTMU3ZTPV3tWEtf8_aem_UxERXumydGYI3dVX-gl_2Q",// Link ke Vercel
+      image: "/wi.png",
+      link: "https://nyxaria-27.itch.io/veil-of-circuits",// Link ke Vercel
     },
+
+    {
+      name: "Game",
+      owner: "Pipit wulandari",
+      description: "Game platformer",
+      image: "/pipit.png",
+      link: "https://pipit6.itch.io/kucing",// Link ke Vercel
+    },
+    // ... Proyek lainnya untuk kelas 11
   ];
+
+  const kelas12Projects = [
+    {
+      name: "Website Perpustakaan SMKN21",
+      owner: "Zahir",
+      description: "Website Perpustakaan SMKN21",
+      image: "/zahir.png", // Pastikan file gambar tersedia di direktori public
+      link: "hhttps://perpustakaan-smkn21jakarta.vercel.app/", // Contoh link
+    },
+
+    
+    // Tambahkan proyek lain di sini jika ada
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white py-20">
       <div className="container mx-auto px-6 md:px-12 space-y-16">
@@ -155,7 +179,9 @@ const Projects: React.FC = () => {
           Proyek Siswa
         </h1>
         <p className="text-center text-lg text-gray-300 mb-8">
-          Berikut adalah beberapa hasil proyek luar biasa yang telah dikerjakan oleh siswa kami. Klik tombol Lihat Proyek untuk melihat hasilnya langsung di Vercel!
+          Berikut adalah beberapa hasil proyek luar biasa yang telah dikerjakan
+          oleh siswa kami. Klik tombol Lihat Proyek untuk melihat hasilnya
+          langsung di Vercel!
         </p>
 
         {/* Kelas 10 Projects */}
@@ -205,38 +231,75 @@ const Projects: React.FC = () => {
           <h2 className="text-3xl font-semibold text-blue-400 mb-6">
             Kelas 11
           </h2>
-          <div className="border-t-4 border-blue-400 mx-auto w-1/2 mb-8"></div>
-        </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
-          {kelas11Projects.map((project, index) => (
-            <div
-              key={index}
-              className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
-            >
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-64 object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
-              />
-              <div className="p-6">
-                <h2 className="text-2xl font-semibold text-blue-400 mb-2">
-                  {project.name}
-                </h2>
-                <p className="text-lg text-gray-300 mb-4">
-                  {project.description}
-                </p>
-                <p className="text-sm text-gray-400">Pemilik: {project.owner}</p>
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"
-                >
-                  Lihat Proyek
-                </a>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+            {kelas11Projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+              >
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-64 object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
+                />
+                <div className="p-6">
+                  <h2 className="text-2xl font-semibold text-blue-400 mb-2">
+                    {project.name}
+                  </h2>
+                  <p className="text-lg text-gray-300 mb-4">
+                    {project.description}
+                  </p>
+                  <p className="text-sm text-gray-400">Pemilik: {project.owner}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"
+                  >
+                    Lihat Proyek
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+
+        {/* Kelas 12 Projects */}
+        <div className="my-8 text-center">
+          <h2 className="text-3xl font-semibold text-blue-400 mb-6">
+            Kelas 12
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-12">
+            {kelas12Projects.map((project, index) => (
+              <div
+                key={index}
+                className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
+              >
+                <img
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-64 object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
+                />
+                <div className="p-6">
+                  <h2 className="text-2xl font-semibold text-blue-400 mb-2">
+                    {project.name}
+                  </h2>
+                  <p className="text-lg text-gray-300 mb-4">
+                    {project.description}
+                  </p>
+                  <p className="text-sm text-gray-400">Pemilik: {project.owner}</p>
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-6 inline-block px-6 py-3 bg-blue-500 text-white rounded-full shadow-lg hover:bg-blue-600 transition"
+                  >
+                    Lihat Proyek
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

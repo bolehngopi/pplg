@@ -29,9 +29,9 @@ const KenapaPilihPPLG = () => {
         <div className="bg-gradient-to-r from-blue-700 to-blue-900 p-8 rounded-xl shadow-lg">
           <h3 className="text-3xl font-bold mb-4">Alasan Memilih PPLG</h3>
           <ul className="list-disc pl-6 space-y-4 text-lg">
-          <li>Karna gaji nya umr (anomali).</li>
-              <li>karna kepencet ().</li>
-              <li>karna ingin menggali teknologi().</li>
+          <li>Karena akuh maw jadi hengker NASA (zahir sang sepuh).</li>
+              <li>pelarian setelah ditolak dkv (jose).</li>
+              <li>Iseng(Si Tamvan kls 12).</li>
               <li>karna gabut().</li>
               <li>karna saya sangat antusias dengan teknologi().</li>
               <li>karna gua ganteng().</li>

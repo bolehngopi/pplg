@@ -80,7 +80,7 @@ const JurusanPPLG: React.FC = () => {
             <h3 className="text-3xl font-bold mb-4">Kelas 12</h3>
             <p className="text-lg mb-8">
               Di kelas 12, kamu akan fokus pada proyek besar, seperti
-              pengembangan aplikasi kompleks, pemahaman DevOps, dan kolaborasi
+              pengembangan aplikasi kompleks,  dan kolaborasi
               tim dalam membangun sistem profesional.
             </p>
           </div>
@@ -109,6 +109,13 @@ const JurusanPPLG: React.FC = () => {
                     Pembina jurusan PPLG dan juga guru pengajar kelas 10, 11, &
                     12.
                   </p>
+                  <p className="text-lg">
+                     ΜΑΤΑ PELAJARAN:
+1. Dasar-Dasar Program Keahlian PPLG - Fase E
+2. Pemrograman Web - Fase F
+3. Pemrograman Perangkat Bergerak - Fase F
+4. Pemrograman Grafis, Teks, dan Multimedia - Fase F
+                  </p>
                 </div>
               </div>
             </div>
@@ -124,7 +131,11 @@ const JurusanPPLG: React.FC = () => {
                 <div className="text-center text-white px-6 py-4">
                   <h4 className="text-2xl font-bold mb-4">Bu Annisa</h4>
                   <p className="text-lg">
-                    Spesialis pengembangan perangkat lunak dan teknologi Python.
+                  MATA PELAJARAN
+1. Informatika - Fase E PPLG
+2. Informatika - Fase E MPLB 1
+3. Informatika - Fase E MPLB 2
+4. Pemrograman Gim - Fase F
                   </p>
                 </div>
               </div>
