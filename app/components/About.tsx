@@ -125,31 +125,38 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          {/* Kenapa Memilih PPLG */}
-          <div className="relative group bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
-            <h3 className="text-3xl font-bold text-blue-300 mb-6">
-              Kenapa Memilih PPLG?
-            </h3>
-            <p className="text-lg text-gray-300">
-              PPLG menawarkan pendidikan yang berorientasi pada proyek, memungkinkan
-              siswa untuk mempelajari teknologi terkini dan membangun masa depan
-              yang cerah di bidang teknologi.
-            </p>
-            <div className="mt-6 flex space-x-4 justify-center">
-              <button
-                onClick={() => router.push("/kelas-11")}
-                className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition"
-              >
-                Lihat Kelas 11
-              </button>
-              <button
-                onClick={() => router.push("/kelas-10")}
-                className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 transition"
-              >
-                Lihat Kelas 10
-              </button>
-            </div>
-          </div>
+         {/* Kenapa Memilih PPLG */}
+<div className="relative group bg-gradient-to-b from-gray-700 via-gray-800 to-gray-900 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition duration-500 transform hover:-translate-y-2">
+  <h3 className="text-3xl font-bold text-blue-300 mb-6">
+    Kenapa Memilih PPLG?
+  </h3>
+  <p className="text-lg text-gray-300">
+    PPLG menawarkan pendidikan yang berorientasi pada proyek, memungkinkan
+    siswa untuk mempelajari teknologi terkini dan membangun masa depan
+    yang cerah di bidang teknologi.
+  </p>
+  <div className="mt-6 flex flex-wrap space-x-4 justify-center">
+    <button
+      onClick={() => router.push("/kelas-11")}
+      className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-full shadow-md hover:bg-blue-600 transition"
+    >
+      Lihat Kelas 11
+    </button>
+    <button
+      onClick={() => router.push("/kelas-10")}
+      className="px-6 py-3 bg-gray-600 text-white font-semibold rounded-full shadow-md hover:bg-gray-700 transition"
+    >
+      Lihat Kelas 10
+    </button>
+    <button
+      onClick={() => router.push("/kelas-12")}
+      className="px-6 py-3 bg-green-500 text-white font-semibold rounded-full shadow-md hover:bg-green-600 transition"
+    >
+      Lihat Kelas 12
+    </button>
+  </div>
+</div>
+
         </div>
       </div>
     </div>

@@ -86,15 +86,15 @@ const Projects: React.FC = () => {
     },
     {
       name: "Portofolio",
-      owner: "Aisyah nirmala",
+      owner: "Fajar Andhika",
       description: "Website Portofolio",
-      image: "/mal.png",
-      link: "https://portofolio-nirmala.vercel.app/", // Link ke Vercel
+      image: "/fajar.png",
+      link: "https://fan-png.vercel.app/", // Link ke Vercel
     },
     {
       name: "Portofolio",
-      owner: "Arman tri fajri",
-      description: "Website Portofolio",
+      owner: "Antonius i wayan ",
+      description: "Game Platformer",
       image: "/jri.png",
       link: "https://portofolio-pink-three.vercel.app/", // Link ke Vercel
     },
@@ -128,8 +128,8 @@ const Projects: React.FC = () => {
     },
     {
       name: "Portofolio",
-      owner: "Antonius I Wayan",
-      description: "Website Portofolio",
+      owner: "Muhammad Al Mahdi",
+      description: "Game platformer",
       image: "/an.png",
       link: "https://portofolio-eight-snowy.vercel.app/", // Link ke Vercel
     },
@@ -141,9 +141,9 @@ const Projects: React.FC = () => {
       link: "hhttps://portofolioaxcel.vercel.app/",// Link ke Vercel
     },
     {
-      name: "Portofolio",
-      owner: "Ahmad Dhani",
-      description: "Website Portofolio",
+      name: "Game",
+      owner: "Dwi Wahyu",
+      description: "Game platformer",
       image: "/dan.png",
       link: "https://protofolio-web-w8f3.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAaaKmzDGYAQ9DCeczSiXG2-kVEaiGsdQxjLiZKGv4gmuTMU3ZTPV3tWEtf8_aem_UxERXumydGYI3dVX-gl_2Q",// Link ke Vercel
     },
