@@ -80,6 +80,13 @@ const Projects: React.FC = () => {
   const kelas11Projects = [
     {
       name: "Portofolio",
+      owner: "Ahmad dhani",
+      description: "Website Portofolio",
+      image: "/dan.png",
+      link: "https://www.canva.com/design/DAGYyoYJ3BE/-zxHrNQTjRfiXvvBiFcVaw/edit?utm_content=DAGYyoYJ3BE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",// Link ke Vercel
+    },
+    {
+      name: "Portofolio",
       owner: "Ahmad Habibi Arouf",
       description: "Website Portofolio",
       image: "/bie.png",
@@ -134,13 +141,7 @@ const Projects: React.FC = () => {
       image: "/madi.png",
       link: "https://almahdi00.itch.io/adventure-knight-in-fairyland", // Link ke Vercel
     },
-    {
-      name: "Portofolio",
-      owner: "Ahmad dhani",
-      description: "Website Portofolio",
-      image: "/dan.png",
-      link: "https://www.canva.com/design/DAGYyoYJ3BE/-zxHrNQTjRfiXvvBiFcVaw/edit?utm_content=DAGYyoYJ3BE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",// Link ke Vercel
-    },
+    
     {
       name: "Game",
       owner: "Dwi Wahyu",
