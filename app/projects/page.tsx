@@ -2,7 +2,7 @@ import { kelas10Projects, kelas11Projects, kelas12Projects } from "@/data";
 import { Metadata } from "next";
 import React from "react";
 
-const ProjectSection: React.FC<{ title: string; projects: any[] }> = ({ title, projects }) => {
+const ProjectSection: React.FC<{ title: string; projects: { link?: string; image?: string; name: string; description: string; owner: string; }[] }> = ({ title, projects }) => {
   return (
     <div className="my-8 text-center">
       <h2 className="text-3xl font-semibold text-blue-400 mb-6">{title}</h2>

@@ -1,6 +1,5 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
 import "./globals.css";
 import Jurusan from "@/components/Jurusan";
 import KelasProject from "@/components/KelasProject";

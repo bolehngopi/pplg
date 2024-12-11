@@ -1,12 +1,9 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const About: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const router = useRouter();
-
   useEffect(() => {
     const handleScroll = () => {
       const aboutSection = document.getElementById("about-section");

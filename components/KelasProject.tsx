@@ -1,12 +1,10 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 const KelasProject: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const router = useRouter();
 
   const handleScroll = () => {
     const kolaseSection = document.getElementById("kolase-section");
