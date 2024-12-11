@@ -157,6 +157,14 @@ const Projects: React.FC = () => {
       image: "/pipit.png",
       link: "https://pipit6.itch.io/kucing",// Link ke Vercel
     },
+
+    {
+      name: "Game",
+      owner: "Muhhamad Fabian",
+      description: "Game platformer",
+      image: "/fabian.png",
+      link: "https://gd.games/instant-builds/2bec8ab5-914a-49d5-af7a-824b15908e61",// Link ke Vercel
+    },
     // ... Proyek lainnya untuk kelas 11
   ];
 
