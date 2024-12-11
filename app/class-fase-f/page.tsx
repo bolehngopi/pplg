@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React from "react";
 
 const KenapaPilihPPLG = () => {
@@ -11,7 +12,7 @@ const KenapaPilihPPLG = () => {
         {/* Card untuk Kenapa Memilih PPLG */}
         <div className="relative group">
           <img
-            src="/11.jpg" // Ganti dengan foto kelas
+            src="/class/11.jpg" // Ganti dengan foto kelas
             alt="Foto Kelas"
             className="w-full h-80 object-cover rounded-lg shadow-lg transform transition duration-500 group-hover:scale-105"
           />
@@ -63,5 +64,12 @@ const KenapaPilihPPLG = () => {
     </div>
   );
 };
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Kelas Fase F",
+    description: "Kelas Fase F adalah kelas yang berada di jurusan PPLG.",
+  }
+}
 
 export default KenapaPilihPPLG;
