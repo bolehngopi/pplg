@@ -10,12 +10,12 @@ export const Navbar: React.FC = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 sticky top-0 left-0 w-full z-[999]">
+    <nav className="bg-gray-900 sticky top-0 left-0 w-full z-[999]">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block text-teal-600 dark:text-teal-300" href={'/'}>
+            <Link className="block " href={'/'}>
               <img
                 src="/logo.png"
                 alt="Logo PPLG"
@@ -30,7 +30,7 @@ export const Navbar: React.FC = () => {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:text-white/75"
                     href={'/projects'}
                   >
                     Projects
@@ -38,7 +38,7 @@ export const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:text-white/75"
                     href={'/class-fase-e'}
                   >
                     Class Fase E
@@ -46,7 +46,7 @@ export const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:text-white/75"
                     href={'/class-fase-f'}
                   >
                     Class Fase F
@@ -54,7 +54,7 @@ export const Navbar: React.FC = () => {
                 </li>
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                    className="text-white transition hover:text-white/75"
                     href={'/class-fase-f-lanjutan'}
                   >
                     Class Fase F Lanjutan
@@ -68,9 +68,9 @@ export const Navbar: React.FC = () => {
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu}>
               {isOpen ? (
-                <FaTimes className="text-gray-500 dark:text-white" size={24} />
+                <FaTimes className="text-gray-500" size={24} />
               ) : (
-                <FaBars className="text-gray-500 dark:text-white" size={24} />
+                <FaBars className="text-gray-500" size={24} />
               )}
             </button>
           </div>
@@ -86,7 +86,7 @@ export const Navbar: React.FC = () => {
         <ul className="space-y-4">
           <li>
             <Link
-              className="text-gray-300 transition hover:text-gray-500 dark:text-white dark:hover:text-white/75"
+              className="text-white transition hover:text-white/75"
               href={'/projects'}
             >
               Projects
@@ -94,7 +94,7 @@ export const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              className="text-gray-300 transition hover:text-gray-500 dark:text-white dark:hover:text-white/75"
+              className="text-white transition hover:text-white/75"
               href={'/class-fase-e'}
             >
               Class Fase E
@@ -102,7 +102,7 @@ export const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              className="text-gray-300 transition hover:text-gray-500 dark:text-white dark:hover:text-white/75"
+              className="text-white transition hover:text-white/75"
               href={'/class-fase-f'}
             >
               Class Fase F
@@ -110,7 +110,7 @@ export const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              className="text-gray-300 transition hover:text-gray-500 dark:text-white dark:hover:text-white/75"
+              className="text-white transition hover:text-white/75"
               href={'class-fase-e-lanjutan'}
             >
               Class Fase F Lanjutan

@@ -82,7 +82,7 @@ const JurusanPPLG: React.FC = () => {
           <h3 className="text-4xl font-bold text-center text-blue-500 mb-8">
             Guru Jurusan PPLG
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 justify-items-center">
             {[
               {
                 imgSrc: "/person/bu-wiwit.png",
@@ -103,23 +103,25 @@ const JurusanPPLG: React.FC = () => {
                   - Pemrograman Gim`,
               },
             ].map((teacher, idx) => (
-              <div
-                key={idx}
-                className="relative group overflow-hidden rounded-lg shadow-xl"
-              >
+              <a href="#" className="group relative block bg-black max-w-96" key={idx}>
                 <img
-                  src={teacher.imgSrc}
                   alt={`Potret ${teacher.name}`}
-                  loading="lazy"
-                  className="w-full h-full object-cover"
+                  src={teacher.imgSrc}
+                  className="absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="text-center text-white px-6 py-4">
-                    <h4 className="text-2xl font-bold mb-4">{teacher.name}</h4>
-                    <p className="text-lg">{teacher.description}</p>
+                <div className="relative p-4 sm:p-6 lg:p-8">
+                  <p className="text-xl font-bold text-white sm:text-2xl">{teacher.name}</p>
+                  <div className="mt-32 sm:mt-48 lg:mt-64">
+                    <div
+                      className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100"
+                    >
+                      <p className="text-sm text-white">
+                        {teacher.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>

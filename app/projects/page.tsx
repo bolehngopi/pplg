@@ -1,6 +1,7 @@
 import { kelas10Projects, kelas11Projects, kelas12Projects } from "@/data";
 import { Metadata } from "next";
 import React from "react";
+import Image from "next/image";
 
 const ProjectSection: React.FC<{ title: string; projects: { link?: string; image?: string; name: string; description: string; owner: string; }[] }> = ({ title, projects }) => {
   return (
@@ -10,15 +11,20 @@ const ProjectSection: React.FC<{ title: string; projects: { link?: string; image
         {projects.map((project, index) => (
           <a
             key={index}
-            href={project.link || '#'}
+            href={project.link || "#"}
             className="bg-gray-800 rounded-xl shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105"
           >
             {project.image && (
-              <img
-                src={project.image}
-                alt={project.name}
-                className="w-full h-64 object-cover rounded-t-xl transition-transform duration-300 hover:scale-110"
-              />
+              <div className="relative w-full h-64">
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  layout="fill"
+                  objectFit="cover"
+                  className="rounded-t-xl transition-transform duration-300 hover:scale-110"
+                  priority
+                />
+              </div>
             )}
             <div className="p-6">
               <h3 className="text-2xl font-semibold text-blue-400 mb-2">{project.name}</h3>
